@@ -1,63 +1,3 @@
-public class Zwembad {
-    private double Breedte;
-    private double Lengte;
-    private double Diepte;
-    private double inhoud;
-    private String Gegevens;
-
-    public Zwembad( double br, double le, double di) {
-        Breedte = br;
-        Lengte = le;
-        Diepte = di;
-
-    }
-    public Zwembad(double inh, String gg){
-        inhoud = inh;
-        Gegevens = gg;
-    }
-
-    public double getBreedte() {
-        return Breedte;
-    }
-
-    public void setBreedte(double breedte) {
-        Breedte = breedte;
-    }
-
-    public double getLengte() {
-        return Lengte;
-    }
-
-    public void setLengte(double lengte) {
-        Lengte = lengte;
-    }
-
-    public double getDiepte() {
-        return Diepte;
-    }
-
-    public void setDiepte(double diepte) {
-        Diepte = diepte;
-    }
-
-    public double getinhoud() {
-        return inhoud;
-    }
-
-    public void setinhoud(double inhoud) {
-        this.inhoud = inhoud;
-    }
-
-    public String getGegevens() {
-        return Gegevens;
-    }
-
-    public void setGegevens(String gegevens) {
-        this.Gegevens = gegevens;
-    }
-}
-
-
 public class Main {
 
 
@@ -78,3 +18,7 @@ public class Main {
         System.out.println("BEREKENDE INHOUD: " + z2.inhoud());
     }
 }
+
+
+
+
