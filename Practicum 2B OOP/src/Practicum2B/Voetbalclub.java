@@ -20,9 +20,16 @@ public class Voetbalclub {
             aantalVerloren = aantalVerloren + 1;
     }
 
-    public String aantalPunten() {
+    public int aantalPunten() {
+        int punten = aantalGewonnen * 3 + aantalGelijk;
+        return punten;
     }
 
-    public String aantalGespeeld() {
+    public int aantalGespeeld() {
+        int gespeeld = aantalGewonnen + aantalGelijk + aantalVerloren;
+        return gespeeld;
+    }
+    public String toString(){
+        return naam +" "+ aantalGespeeld() +" "+ aantalGewonnen +" "+ aantalGelijk +" "+ aantalVerloren +" "+ aantalPunten();
     }
 }
